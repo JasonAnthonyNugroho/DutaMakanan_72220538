@@ -14,13 +14,13 @@ class APIController extends Controller
             return response()->json([
                 'success' =>false,
                 'data' => 'Data Tidak Ditemukan'
-            ],200)->header('Access-Control-Allow-Origin','http://127.0.0.1:5500');;
+            ],200)->header('Access-Control-Allow-Origin','*');;
         }
         else{
             return response()->json([
                 'success' =>true,
                 'data' => $makanan
-            ],200)->header('Access-Control-Allow-Origin','http://127.0.0.1:5500');
+            ],200)->header('Access-Control-Allow-Origin','*');
         }
     }
 }

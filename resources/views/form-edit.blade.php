@@ -41,7 +41,6 @@
                 <label>Deskripsi</label>
                 <br>
                 <input type="file" name="deskripsi" class="form-control-file" accept="image/*"> <br>
-                <img src ="{{ asset ('/storage/'.$mv->deskripsi)}}" alt="{{$mv -> deskripsi}}" height ="130" width="130">
             </div>
             <div class="form-group">
                 <button type="submit" class="btn btn-primary">SIMPAN</button>   
